@@ -81,7 +81,7 @@ $(document).ready(function () {
 
                     showTemperature(tempObj.c);
 
-                    showLocation(weatherData.name, locationData.country);
+                    showLocation(locationData.city, locationData.country);
 
                     showOthers(weatherData.main.humidity, weatherData.wind.speed, weatherData.visibility);
 
@@ -166,7 +166,7 @@ function showTemperature(temp) {
 
 function showLocation(city, country) {
     $(".location").contents().filter(function () {
-        return this.nodeType == 3
+        return this.nodeType === 3
     }).each(function () {
         $(this).remove();
     });
