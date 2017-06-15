@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,700,400' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="intro-bg" class="weather-card  container">
+        <div class="row">
+            <div class="col-xs-8">
+                <p class="day">Tuesday, June 13</p>
+            </div>
+            <div class="col-xs-4">
+                <p class="time" style="text-align: right;">3:25 AM</p>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 25px; margin-bottom: 40px">
+            <div class="col-xs-6">
+                <!--<img id="weather-icon"src="icons/sunny.png">-->
+                <div class="icon">
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <p class="temp">76&deg;</p>
+            </div>
+        </div>
+        <div class="row" style="margin-bottom: 30px;">
+            <div class="col-xs-12">
+                <p id="currLocation" class="location">
+                    <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Bhopal, India
+                </p>
+            </div>
+        </div>
+        <div class="row" style="letter-spacing: 1px; margin-bottom: 42px;">
+            <div class="r-border col-xs-4">
+                <p>HUMIDITY</p>
+                <p id="humidity" class="value">1.20%</p>
+            </div>
+            <div class="l-border r-border col-xs-4">
+                <p>WIND</p>
+                <p id="wind" class="value">1.20m/s</p>
+            </div>
+            <div class="l-border col-xs-4">
+                <p>VISIBILITY</p>
+                <p id="visibility" class="value">1.20m</p>
+            </div>
+        </div>
+        <div class="unit row" style="margin-top: 20px;">
+            <div class="col-xs-6 r-border" style="text-align: right;">
+                <a id="cel" href="#">&#176;C</a>
+            </div>
+            <div class="col-xs-6 l-border" style="text-align: left;">
+                <a id="fah" href="#">&#176;F</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="third-party/spin.min.js"></script>
+    <script src="third-party/moment.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/index.js"></script>
+
+</html>
