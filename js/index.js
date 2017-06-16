@@ -105,16 +105,20 @@ $(document).ready(function () {
                 })
                 .fail(function (xhr, status, errorThrown) {
                     alert("Sorry, there is some problem!");
+                    spinner.stop();
                     console.log("Error: " + errorThrown);
                     console.log("Status: " + status);
                     console.dir(xhr);
+                    $(".weather-card").html("<h3>Some error occured!</h3>");
                 });
         })
         .fail(function (xhr, status, errorThrown) {
             alert("Location unavailable!");
+            spinner.stop();
             console.log("Error: " + errorThrown);
             console.log("Status: " + status);
             console.dir(xhr);
+            $(".weather-card").html("<h3>Some error occured!</h3>");
         });
 });
 
