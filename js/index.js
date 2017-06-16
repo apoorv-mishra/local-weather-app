@@ -130,7 +130,7 @@ function showDateAndTime() {
 
 function showIcon(weather) {
     if (weather === "Thunderstorm" || weather === "Extreme") {
-        var thunderstrom = '<div class="cloud"></div>\
+        var thunderstorm = '<div class="cloud"></div>\
                             <div class="lightning">\
                                 <div class="bolt"></div>\
                                 <div class="bolt"></div>\
