@@ -47,7 +47,7 @@ $(document).ready(function () {
     var target = document.getElementById('intro-bg')
     var spinner = new Spinner(opts).spin(target);
 
-    var locationApiUrl = "https://ipinfo.io/json"
+    var locationApiUrl = "https://ipapi.co/json"
     $.ajax({
             url: locationApiUrl,
             type: 'GET'
@@ -55,10 +55,8 @@ $(document).ready(function () {
         .done(function (locationData) {
             console.log(locationData);
 
-            var loc = locationData.loc.split(",");
-
             var units = "metric";
-            var weatherApiUrl = config.BASE_URL + config.API_KEY + '&lat=' + loc[0] + '&lon=' + loc[1] + '&units=' + units;
+            var weatherApiUrl = config.BASE_URL + config.API_KEY + '&lat=' + locationData.latitude + '&lon=' + locationData.longitude + '&units=' + units;
             $.ajax({
                     url: weatherApiUrl,
                     type: 'GET'
