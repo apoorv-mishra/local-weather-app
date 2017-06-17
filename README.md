@@ -11,5 +11,5 @@ const config = {
     BASE_URL: "http://api.openweathermap.org/data/2.5/weather?id=524901&APPID="
 }
 ```
-5. Put your API key in the above snippet and save the file.
-6. Launch index.html in your browser.
+4. Put your API key in the above snippet and save the file.
+5. Launch index.html in your browser.
